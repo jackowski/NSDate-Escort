@@ -24,7 +24,7 @@ static dispatch_once_t AZ_DefaultCalendarIdentifierLock_onceToken;
         }
         [dictionary setObject:currentCalendar forKey:key];
     }
-    currentCalendar.timeZone = [NSTimeZone localTimeZone];
+    currentCalendar.timeZone = [NSTimeZone defaultTimeZone];
     return currentCalendar;
 }
 
